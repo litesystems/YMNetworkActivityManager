@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		704BA48117EB7220007B571E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BA48017EB7220007B571E /* UIKit.framework */; };
+		704BA48317EB7220007B571E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BA48217EB7220007B571E /* Foundation.framework */; };
+		704BA48517EB7220007B571E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BA48417EB7220007B571E /* CoreGraphics.framework */; };
+		704BA48B17EB7220007B571E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 704BA48917EB7220007B571E /* InfoPlist.strings */; };
+		704BA48D17EB7220007B571E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 704BA48C17EB7220007B571E /* main.m */; };
+		704BA49117EB7220007B571E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 704BA49017EB7220007B571E /* AppDelegate.m */; };
+		704BA49317EB7220007B571E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 704BA49217EB7220007B571E /* Default.png */; };
+		704BA49517EB7220007B571E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 704BA49417EB7220007B571E /* Default@2x.png */; };
+		704BA49717EB7220007B571E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 704BA49617EB7220007B571E /* Default-568h@2x.png */; };
+		704BA49A17EB7220007B571E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704BA49917EB7220007B571E /* ViewController.m */; };
+		704BA49D17EB7220007B571E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 704BA49B17EB7220007B571E /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		704BA47D17EB7220007B571E /* YMNetworkActivityManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMNetworkActivityManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		704BA48017EB7220007B571E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		704BA48217EB7220007B571E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		704BA48417EB7220007B571E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		704BA48817EB7220007B571E /* YMNetworkActivityManagerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YMNetworkActivityManagerDemo-Info.plist"; sourceTree = "<group>"; };
+		704BA48A17EB7220007B571E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		704BA48C17EB7220007B571E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		704BA48E17EB7220007B571E /* YMNetworkActivityManagerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YMNetworkActivityManagerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		704BA48F17EB7220007B571E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		704BA49017EB7220007B571E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		704BA49217EB7220007B571E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		704BA49417EB7220007B571E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		704BA49617EB7220007B571E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		704BA49817EB7220007B571E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		704BA49917EB7220007B571E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		704BA49C17EB7220007B571E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		704BA47A17EB7220007B571E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704BA48117EB7220007B571E /* UIKit.framework in Frameworks */,
+				704BA48317EB7220007B571E /* Foundation.framework in Frameworks */,
+				704BA48517EB7220007B571E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		704BA47417EB7220007B571E = {
+			isa = PBXGroup;
+			children = (
+				704BA48617EB7220007B571E /* YMNetworkActivityManagerDemo */,
+				704BA47F17EB7220007B571E /* Frameworks */,
+				704BA47E17EB7220007B571E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		704BA47E17EB7220007B571E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				704BA47D17EB7220007B571E /* YMNetworkActivityManagerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		704BA47F17EB7220007B571E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				704BA48017EB7220007B571E /* UIKit.framework */,
+				704BA48217EB7220007B571E /* Foundation.framework */,
+				704BA48417EB7220007B571E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		704BA48617EB7220007B571E /* YMNetworkActivityManagerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				704BA48F17EB7220007B571E /* AppDelegate.h */,
+				704BA49017EB7220007B571E /* AppDelegate.m */,
+				704BA49817EB7220007B571E /* ViewController.h */,
+				704BA49917EB7220007B571E /* ViewController.m */,
+				704BA49B17EB7220007B571E /* ViewController.xib */,
+				704BA48717EB7220007B571E /* Supporting Files */,
+			);
+			path = YMNetworkActivityManagerDemo;
+			sourceTree = "<group>";
+		};
+		704BA48717EB7220007B571E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				704BA48817EB7220007B571E /* YMNetworkActivityManagerDemo-Info.plist */,
+				704BA48917EB7220007B571E /* InfoPlist.strings */,
+				704BA48C17EB7220007B571E /* main.m */,
+				704BA48E17EB7220007B571E /* YMNetworkActivityManagerDemo-Prefix.pch */,
+				704BA49217EB7220007B571E /* Default.png */,
+				704BA49417EB7220007B571E /* Default@2x.png */,
+				704BA49617EB7220007B571E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		704BA47C17EB7220007B571E /* YMNetworkActivityManagerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 704BA4A017EB7220007B571E /* Build configuration list for PBXNativeTarget "YMNetworkActivityManagerDemo" */;
+			buildPhases = (
+				704BA47917EB7220007B571E /* Sources */,
+				704BA47A17EB7220007B571E /* Frameworks */,
+				704BA47B17EB7220007B571E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YMNetworkActivityManagerDemo;
+			productName = YMNetworkActivityManagerDemo;
+			productReference = 704BA47D17EB7220007B571E /* YMNetworkActivityManagerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		704BA47517EB7220007B571E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Yusuke Miyazaki";
+			};
+			buildConfigurationList = 704BA47817EB7220007B571E /* Build configuration list for PBXProject "YMNetworkActivityManagerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 704BA47417EB7220007B571E;
+			productRefGroup = 704BA47E17EB7220007B571E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				704BA47C17EB7220007B571E /* YMNetworkActivityManagerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		704BA47B17EB7220007B571E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704BA48B17EB7220007B571E /* InfoPlist.strings in Resources */,
+				704BA49317EB7220007B571E /* Default.png in Resources */,
+				704BA49517EB7220007B571E /* Default@2x.png in Resources */,
+				704BA49717EB7220007B571E /* Default-568h@2x.png in Resources */,
+				704BA49D17EB7220007B571E /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		704BA47917EB7220007B571E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704BA48D17EB7220007B571E /* main.m in Sources */,
+				704BA49117EB7220007B571E /* AppDelegate.m in Sources */,
+				704BA49A17EB7220007B571E /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		704BA48917EB7220007B571E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				704BA48A17EB7220007B571E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		704BA49B17EB7220007B571E /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				704BA49C17EB7220007B571E /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		704BA49E17EB7220007B571E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		704BA49F17EB7220007B571E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		704BA4A117EB7220007B571E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YMNetworkActivityManagerDemo/YMNetworkActivityManagerDemo-Prefix.pch";
+				INFOPLIST_FILE = "YMNetworkActivityManagerDemo/YMNetworkActivityManagerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		704BA4A217EB7220007B571E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YMNetworkActivityManagerDemo/YMNetworkActivityManagerDemo-Prefix.pch";
+				INFOPLIST_FILE = "YMNetworkActivityManagerDemo/YMNetworkActivityManagerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		704BA47817EB7220007B571E /* Build configuration list for PBXProject "YMNetworkActivityManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				704BA49E17EB7220007B571E /* Debug */,
+				704BA49F17EB7220007B571E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		704BA4A017EB7220007B571E /* Build configuration list for PBXNativeTarget "YMNetworkActivityManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				704BA4A117EB7220007B571E /* Debug */,
+				704BA4A217EB7220007B571E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 704BA47517EB7220007B571E /* Project object */;
+}
