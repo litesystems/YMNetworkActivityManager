@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "YMNetworkActivityManager.h"
+
 @interface ViewController ()
 
 @end
@@ -24,8 +26,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)buttonTouchUpInside:(id)sender {
-    NSLog(@"Increment");
+- (IBAction)incrementButtonTouchUpInside:(id)sender {
+    [[YMNetworkActivityManager sharedManager] increment];
+}
+
+- (IBAction)decrementButtonTouchUpInside:(id)sender {
+    [[YMNetworkActivityManager sharedManager] decrement];
 }
 
 @end

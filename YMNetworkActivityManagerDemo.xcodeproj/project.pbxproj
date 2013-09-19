@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7024F45F17EB770D008743D4 /* YMNetworkActivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7024F45E17EB770D008743D4 /* YMNetworkActivityManager.m */; };
 		704BA48117EB7220007B571E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BA48017EB7220007B571E /* UIKit.framework */; };
 		704BA48317EB7220007B571E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BA48217EB7220007B571E /* Foundation.framework */; };
 		704BA48517EB7220007B571E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BA48417EB7220007B571E /* CoreGraphics.framework */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7024F45D17EB770D008743D4 /* YMNetworkActivityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMNetworkActivityManager.h; sourceTree = "<group>"; };
+		7024F45E17EB770D008743D4 /* YMNetworkActivityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMNetworkActivityManager.m; sourceTree = "<group>"; };
 		704BA47D17EB7220007B571E /* YMNetworkActivityManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMNetworkActivityManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		704BA48017EB7220007B571E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		704BA48217EB7220007B571E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,6 +88,8 @@
 			children = (
 				704BA48F17EB7220007B571E /* AppDelegate.h */,
 				704BA49017EB7220007B571E /* AppDelegate.m */,
+				7024F45D17EB770D008743D4 /* YMNetworkActivityManager.h */,
+				7024F45E17EB770D008743D4 /* YMNetworkActivityManager.m */,
 				704BA49817EB7220007B571E /* ViewController.h */,
 				704BA49917EB7220007B571E /* ViewController.m */,
 				704BA49B17EB7220007B571E /* ViewController.xib */,
@@ -174,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				704BA48D17EB7220007B571E /* main.m in Sources */,
+				7024F45F17EB770D008743D4 /* YMNetworkActivityManager.m in Sources */,
 				704BA49117EB7220007B571E /* AppDelegate.m in Sources */,
 				704BA49A17EB7220007B571E /* ViewController.m in Sources */,
 			);

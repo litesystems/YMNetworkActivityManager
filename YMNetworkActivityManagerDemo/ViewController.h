@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
-- (IBAction)buttonTouchUpInside:(id)sender;
+- (IBAction)incrementButtonTouchUpInside:(id)sender;
+- (IBAction)decrementButtonTouchUpInside:(id)sender;
 
 @end
