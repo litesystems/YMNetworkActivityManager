@@ -12,5 +12,6 @@
 
 - (IBAction)incrementButtonTouchUpInside:(id)sender;
 - (IBAction)decrementButtonTouchUpInside:(id)sender;
+- (IBAction)resetButtonTouchUpInside:(id)sender;
 
 @end

@@ -42,14 +42,14 @@ static YMNetworkActivityManager *networkActivityManager = nil;
     return networkActivityManager;
 }
 
-- (void)increment {
+- (NSUInteger)increment {
     counter++;
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     NSLog(@"NetworkActivityManager: Increment[%d]", counter);
-    return;
+    return counter;
 }
 
-- (void)decrement {
+- (NSUInteger)decrement {
     if (counter <= 1) {
         counter = 0;
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
@@ -57,8 +57,14 @@ static YMNetworkActivityManager *networkActivityManager = nil;
         counter--;
     }
     NSLog(@"NetworkActivityManager: Decrement[%d]", counter);
-    return;
+    return counter;
+}
+
+- (NSUInteger)reset {
+    counter = 0;
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+    NSLog(@"NetworkActivityManager: Reset[0]");
+    return 0;
 }
 
 @end
-

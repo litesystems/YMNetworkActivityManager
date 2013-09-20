@@ -9,17 +9,18 @@
 #import <Foundation/Foundation.h>
 
 @interface YMNetworkActivityManager : NSObject {
-    unsigned int counter;
+    NSUInteger counter;
 }
 
 - (id)init;
 + (id)allocWithZone:(NSZone *)zone;
-- (id)copyWithZone:(NSZone*)zone;
+- (id)copyWithZone:(NSZone *)zone;
 
 + (YMNetworkActivityManager *)sharedManager;
 
-- (void)increment;
-- (void)decrement;
+- (NSUInteger)increment;
+- (NSUInteger)decrement;
+- (NSUInteger)reset;
 
 @end
 
