@@ -34,4 +34,8 @@
     [[YMNetworkActivityManager sharedManager] decrement];
 }
 
+- (IBAction)resetButtonTouchUpInside:(id)sender {
+    [[YMNetworkActivityManager sharedManager] reset];
+}
+
 @end
