@@ -29,7 +29,7 @@ static YMNetworkActivityManager *networkActivityManager = nil;
     return nil;
 }
 
-- (id)copyWithZone:(NSZone*)zone {
+- (id)copyWithZone:(NSZone *)zone {
     return self;
 }
 
