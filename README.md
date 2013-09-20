@@ -1,6 +1,6 @@
 YMNetworkActivityManager
 ========================
-**YMNetworkActivityManager** is a manager class of the little network activity indicator in the  status bar.
+**YMNetworkActivityManager** is a manager class of the network activity indicator in the status bar.
 
 Requirements
 ============
