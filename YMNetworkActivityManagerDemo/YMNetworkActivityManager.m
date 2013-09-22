@@ -13,7 +13,8 @@
 static YMNetworkActivityManager *networkActivityManager = nil;
 
 - (id)init {
-    if (self = [super init]) {
+    self = [super init];
+    if (self != nil) {
         counter = 0;
     }
     return self;
