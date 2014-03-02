@@ -1,7 +1,7 @@
 YMNetworkActivityManager
 ========================
 
-[![Build Status](https://travis-ci.org/litesystems/YMNetworkActivityManager.png?branch=develop)](https://travis-ci.org/litesystems/YMNetworkActivityManager)
+[![Build Status](https://travis-ci.org/litesystems/YMNetworkActivityManager.png?branch=master)](https://travis-ci.org/litesystems/YMNetworkActivityManager)
 
 **YMNetworkActivityManager** is a manager class of the network activity indicator in the status bar.
 
