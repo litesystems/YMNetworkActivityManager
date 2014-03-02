@@ -18,7 +18,7 @@ task :default => [:build]
 
 task :test do
   DESTINATIONS.each do |destination|
-    sh "xcodebuild -project #{PROJECT_DIR} -sdk iphonesimulator -scheme #{SCHEME} -configuration Debug -destination #{destination} test"
+    sh "xcodebuild -project #{PROJECT_DIR} -sdk iphonesimulator -scheme #{SCHEME} -configuration Debug -destination '#{destination}' test"
   end
 end
 
