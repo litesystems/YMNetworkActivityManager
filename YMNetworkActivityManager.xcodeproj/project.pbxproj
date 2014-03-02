@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7024F45F17EB770D008743D4 /* YMNetworkActivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7024F45E17EB770D008743D4 /* YMNetworkActivityManager.m */; };
+		7045889418C3E5B4006FAC92 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7045889318C3E5B4006FAC92 /* SenTestingKit.framework */; };
+		7045889518C3E5B4006FAC92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BA48217EB7220007B571E /* Foundation.framework */; };
+		7045889618C3E5B4006FAC92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BA48017EB7220007B571E /* UIKit.framework */; };
+		7045889C18C3E5B4006FAC92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7045889A18C3E5B4006FAC92 /* InfoPlist.strings */; };
+		7045889E18C3E5B4006FAC92 /* YMNetworkActivityManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7045889D18C3E5B4006FAC92 /* YMNetworkActivityManagerTests.m */; };
 		704BA48117EB7220007B571E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BA48017EB7220007B571E /* UIKit.framework */; };
 		704BA48317EB7220007B571E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BA48217EB7220007B571E /* Foundation.framework */; };
 		704BA48517EB7220007B571E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BA48417EB7220007B571E /* CoreGraphics.framework */; };
@@ -21,10 +26,26 @@
 		704BA49D17EB7220007B571E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 704BA49B17EB7220007B571E /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		704588A018C3E5B4006FAC92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 704BA47517EB7220007B571E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 704BA47C17EB7220007B571E;
+			remoteInfo = YMNetworkActivityManager;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		7024F45D17EB770D008743D4 /* YMNetworkActivityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMNetworkActivityManager.h; sourceTree = "<group>"; };
 		7024F45E17EB770D008743D4 /* YMNetworkActivityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMNetworkActivityManager.m; sourceTree = "<group>"; };
 		7045888D18C3D9A6006FAC92 /* YMNetworkActivityManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YMNetworkActivityManager-Prefix.pch"; sourceTree = "<group>"; };
+		7045889218C3E5B4006FAC92 /* YMNetworkActivityManagerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMNetworkActivityManagerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7045889318C3E5B4006FAC92 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7045889918C3E5B4006FAC92 /* YMNetworkActivityManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YMNetworkActivityManagerTests-Info.plist"; sourceTree = "<group>"; };
+		7045889B18C3E5B4006FAC92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7045889D18C3E5B4006FAC92 /* YMNetworkActivityManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMNetworkActivityManagerTests.m; sourceTree = "<group>"; };
+		7045889F18C3E5B4006FAC92 /* YMNetworkActivityManagerTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YMNetworkActivityManagerTests-Prefix.pch"; sourceTree = "<group>"; };
 		704BA47D17EB7220007B571E /* YMNetworkActivityManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YMNetworkActivityManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		704BA48017EB7220007B571E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		704BA48217EB7220007B571E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,6 +64,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7045888F18C3E5B4006FAC92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7045889418C3E5B4006FAC92 /* SenTestingKit.framework in Frameworks */,
+				7045889618C3E5B4006FAC92 /* UIKit.framework in Frameworks */,
+				7045889518C3E5B4006FAC92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		704BA47A17EB7220007B571E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,11 +97,31 @@
 			path = YMNetworkActivityManagerDemo;
 			sourceTree = "<group>";
 		};
+		7045889718C3E5B4006FAC92 /* YMNetworkActivityManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7045889D18C3E5B4006FAC92 /* YMNetworkActivityManagerTests.m */,
+				7045889818C3E5B4006FAC92 /* Supporting Files */,
+			);
+			path = YMNetworkActivityManagerTests;
+			sourceTree = "<group>";
+		};
+		7045889818C3E5B4006FAC92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7045889918C3E5B4006FAC92 /* YMNetworkActivityManagerTests-Info.plist */,
+				7045889A18C3E5B4006FAC92 /* InfoPlist.strings */,
+				7045889F18C3E5B4006FAC92 /* YMNetworkActivityManagerTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		704BA47417EB7220007B571E = {
 			isa = PBXGroup;
 			children = (
 				7045888C18C3D974006FAC92 /* YMNetworkActivityManager */,
 				704BA48617EB7220007B571E /* YMNetworkActivityManagerDemo */,
+				7045889718C3E5B4006FAC92 /* YMNetworkActivityManagerTests */,
 				704BA47F17EB7220007B571E /* Frameworks */,
 				704BA47E17EB7220007B571E /* Products */,
 			);
@@ -80,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				704BA47D17EB7220007B571E /* YMNetworkActivityManager.app */,
+				7045889218C3E5B4006FAC92 /* YMNetworkActivityManagerTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +142,7 @@
 				704BA48017EB7220007B571E /* UIKit.framework */,
 				704BA48217EB7220007B571E /* Foundation.framework */,
 				704BA48417EB7220007B571E /* CoreGraphics.framework */,
+				7045889318C3E5B4006FAC92 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,6 +177,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7045889118C3E5B4006FAC92 /* YMNetworkActivityManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 704588A218C3E5B4006FAC92 /* Build configuration list for PBXNativeTarget "YMNetworkActivityManagerTests" */;
+			buildPhases = (
+				7045888E18C3E5B4006FAC92 /* Sources */,
+				7045888F18C3E5B4006FAC92 /* Frameworks */,
+				7045889018C3E5B4006FAC92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				704588A118C3E5B4006FAC92 /* PBXTargetDependency */,
+			);
+			name = YMNetworkActivityManagerTests;
+			productName = YMNetworkActivityManagerTests;
+			productReference = 7045889218C3E5B4006FAC92 /* YMNetworkActivityManagerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		704BA47C17EB7220007B571E /* YMNetworkActivityManager */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 704BA4A017EB7220007B571E /* Build configuration list for PBXNativeTarget "YMNetworkActivityManager" */;
@@ -149,6 +220,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Yusuke Miyazaki";
+				TargetAttributes = {
+					7045889118C3E5B4006FAC92 = {
+						TestTargetID = 704BA47C17EB7220007B571E;
+					};
+				};
 			};
 			buildConfigurationList = 704BA47817EB7220007B571E /* Build configuration list for PBXProject "YMNetworkActivityManager" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -163,11 +239,20 @@
 			projectRoot = "";
 			targets = (
 				704BA47C17EB7220007B571E /* YMNetworkActivityManager */,
+				7045889118C3E5B4006FAC92 /* YMNetworkActivityManagerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7045889018C3E5B4006FAC92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7045889C18C3E5B4006FAC92 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		704BA47B17EB7220007B571E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -183,6 +268,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7045888E18C3E5B4006FAC92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7045889E18C3E5B4006FAC92 /* YMNetworkActivityManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		704BA47917EB7220007B571E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,7 +289,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		704588A118C3E5B4006FAC92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 704BA47C17EB7220007B571E /* YMNetworkActivityManager */;
+			targetProxy = 704588A018C3E5B4006FAC92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		7045889A18C3E5B4006FAC92 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7045889B18C3E5B4006FAC92 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		704BA48917EB7220007B571E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,6 +325,67 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		704588A318C3E5B4006FAC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YMNetworkActivityManager.app/YMNetworkActivityManager";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YMNetworkActivityManagerTests/YMNetworkActivityManagerTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "YMNetworkActivityManagerTests/YMNetworkActivityManagerTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		704588A418C3E5B4006FAC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YMNetworkActivityManager.app/YMNetworkActivityManager";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YMNetworkActivityManagerTests/YMNetworkActivityManagerTests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "YMNetworkActivityManagerTests/YMNetworkActivityManagerTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		704BA49E17EB7220007B571E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -299,6 +469,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		704588A218C3E5B4006FAC92 /* Build configuration list for PBXNativeTarget "YMNetworkActivityManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				704588A318C3E5B4006FAC92 /* Debug */,
+				704588A418C3E5B4006FAC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		704BA47817EB7220007B571E /* Build configuration list for PBXProject "YMNetworkActivityManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
