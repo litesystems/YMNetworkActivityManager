@@ -9,22 +9,32 @@
 
 #import "YMNetworkActivityManager.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    YMNetworkActivityManager *manager;
+}
 
 @end
 
 @implementation ViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    manager = [YMNetworkActivityManager sharedManager];
+}
+
 - (IBAction)incrementButtonTouchUpInside:(id)sender {
-    [[YMNetworkActivityManager sharedManager] increment];
+    [manager increment];
+    NSLog(@"NetworkActivityManager: Increment[%ld]", (long)manager.counter);
 }
 
 - (IBAction)decrementButtonTouchUpInside:(id)sender {
-    [[YMNetworkActivityManager sharedManager] decrement];
+    [manager decrement];
+    NSLog(@"NetworkActivityManager: Decrement[%ld]", (long)manager.counter);
 }
 
 - (IBAction)resetButtonTouchUpInside:(id)sender {
-    [[YMNetworkActivityManager sharedManager] reset];
+    [manager reset];
+    NSLog(@"NetworkActivityManager: Reset[%ld]", (long)manager.counter);
 }
 
 @end
