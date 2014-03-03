@@ -9,6 +9,8 @@
 
 @interface YMNetworkActivityManager : NSObject
 
+@property (nonatomic, readonly) NSUInteger counter;
+
 - (id)init;
 + (id)allocWithZone:(NSZone *)zone;
 - (id)copyWithZone:(NSZone *)zone;
