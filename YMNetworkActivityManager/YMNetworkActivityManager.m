@@ -7,12 +7,6 @@
 
 #import "YMNetworkActivityManager.h"
 
-@interface YMNetworkActivityManager () {
-    NSUInteger counter;
-};
-
-@end
-
 @implementation YMNetworkActivityManager
 
 static YMNetworkActivityManager *networkActivityManager = nil;
@@ -20,7 +14,7 @@ static YMNetworkActivityManager *networkActivityManager = nil;
 - (id)init {
     self = [super init];
     if (self != nil) {
-        counter = 0;
+        _counter = 0;
     }
     return self;
 }
@@ -49,27 +43,24 @@ static YMNetworkActivityManager *networkActivityManager = nil;
 }
 
 - (NSUInteger)increment {
-    counter++;
+    _counter++;
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    NSLog(@"NetworkActivityManager: Increment[%d]", (int)counter);
-    return counter;
+    return _counter;
 }
 
 - (NSUInteger)decrement {
-    if (counter <= 1) {
-        counter = 0;
+    if (_counter <= 1) {
+        _counter = 0;
         [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     } else {
-        counter--;
+        _counter--;
     }
-    NSLog(@"NetworkActivityManager: Decrement[%d]", (int)counter);
-    return counter;
+    return _counter;
 }
 
 - (NSUInteger)reset {
-    counter = 0;
+    _counter = 0;
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-    NSLog(@"NetworkActivityManager: Reset[0]");
     return 0;
 }
 
