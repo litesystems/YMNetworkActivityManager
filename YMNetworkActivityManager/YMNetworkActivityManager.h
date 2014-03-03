@@ -2,15 +2,12 @@
 //  YMNetworkActivityManager.h
 //  YMNetworkActivityManager
 //
-//  Created by Yusuke Miyazaki on 2013/03/15.
-//  Copyright (c) 2013 Yusuke Miyazaki. All rights reserved.
+//  Copyright (c) 2013-2014 Yusuke Miyazaki.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface YMNetworkActivityManager : NSObject {
-    NSUInteger counter;
-}
+@interface YMNetworkActivityManager : NSObject
 
 - (id)init;
 + (id)allocWithZone:(NSZone *)zone;
@@ -23,4 +20,3 @@
 - (NSUInteger)reset;
 
 @end
-

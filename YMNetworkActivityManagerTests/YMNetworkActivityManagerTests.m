@@ -2,8 +2,7 @@
 //  YMNetworkActivityManagerTests.m
 //  YMNetworkActivityManagerTests
 //
-//  Created by Yusuke Miyazaki on 2014/03/03.
-//  Copyright (c) 2014 Yusuke Miyazaki. All rights reserved.
+//  Copyright (c) 2014 Yusuke Miyazaki.
 //
 
 #import <SenTestingKit/SenTestingKit.h>

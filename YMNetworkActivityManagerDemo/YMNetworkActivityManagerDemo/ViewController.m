@@ -2,8 +2,7 @@
 //  ViewController.m
 //  YMNetworkActivityManagerDemo
 //
-//  Created by Yusuke Miyazaki on 2013/09/20.
-//  Copyright (c) 2013 Yusuke Miyazaki. All rights reserved.
+//  Copyright (c) 2013-2014 Yusuke Miyazaki.
 //
 
 #import "ViewController.h"
@@ -15,16 +14,6 @@
 @end
 
 @implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (IBAction)incrementButtonTouchUpInside:(id)sender {
     [[YMNetworkActivityManager sharedManager] increment];
