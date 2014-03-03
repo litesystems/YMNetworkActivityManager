@@ -1,10 +1,8 @@
 //
-//  Prefix header
-//
-//  The contents of this file are implicitly included at the beginning of every source file.
+// Prefix header for all source files of the 'YMNetworkActivityManager' target in the 'YMNetworkActivityManager' project
 //
 
 #ifdef __OBJC__
-    #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
 #endif
