@@ -2,11 +2,16 @@
 //  YMNetworkActivityManager.m
 //  YMNetworkActivityManager
 //
-//  Created by Yusuke Miyazaki on 2013/03/15.
-//  Copyright (c) 2013 Yusuke Miyazaki. All rights reserved.
+//  Copyright (c) 2013-2014 Yusuke Miyazaki.
 //
 
 #import "YMNetworkActivityManager.h"
+
+@interface YMNetworkActivityManager () {
+    NSUInteger counter;
+};
+
+@end
 
 @implementation YMNetworkActivityManager
 
@@ -46,7 +51,7 @@ static YMNetworkActivityManager *networkActivityManager = nil;
 - (NSUInteger)increment {
     counter++;
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
-    NSLog(@"NetworkActivityManager: Increment[%d]", counter);
+    NSLog(@"NetworkActivityManager: Increment[%d]", (int)counter);
     return counter;
 }
 
@@ -57,7 +62,7 @@ static YMNetworkActivityManager *networkActivityManager = nil;
     } else {
         counter--;
     }
-    NSLog(@"NetworkActivityManager: Decrement[%d]", counter);
+    NSLog(@"NetworkActivityManager: Decrement[%d]", (int)counter);
     return counter;
 }
 
