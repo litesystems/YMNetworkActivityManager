@@ -21,3 +21,9 @@ Usage
 // Decrement
 [[YMNetworkActivityManager sharedManager] decrement];
 ```
+
+License
+=======
+The MIT License
+
+See [LICENSE](LICENSE).
