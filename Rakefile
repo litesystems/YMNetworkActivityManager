@@ -19,7 +19,7 @@ task :default => [:build]
 
 task :test do
   DESTINATIONS.each do |destination|
-    sh "xctool -project #{PROJECT_DIR} -sdk iphonesimulator -scheme #{SCHEME} -configuration Debug -destination '#{destination}' test"
+    sh "xctool -project #{PROJECT_DIR} -sdk iphonesimulator -scheme #{SCHEME} -configuration Debug -destination '#{destination}' clean build test"
   end
 end
 
