@@ -10,7 +10,6 @@
 		705EB2DD18C42C5500AA841D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705EB2DC18C42C5500AA841D /* Foundation.framework */; };
 		705EB2E218C42C5500AA841D /* YMNetworkActivityManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 705EB2E118C42C5500AA841D /* YMNetworkActivityManager.h */; };
 		705EB2E418C42C5500AA841D /* YMNetworkActivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 705EB2E318C42C5500AA841D /* YMNetworkActivityManager.m */; };
-		705EB2EC18C42C5500AA841D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705EB2EB18C42C5500AA841D /* SenTestingKit.framework */; };
 		705EB2EE18C42C5500AA841D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705EB2ED18C42C5500AA841D /* UIKit.framework */; };
 		705EB2EF18C42C5500AA841D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705EB2DC18C42C5500AA841D /* Foundation.framework */; };
 		705EB2F218C42C5500AA841D /* libYMNetworkActivityManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 705EB2D918C42C5500AA841D /* libYMNetworkActivityManager.a */; };
@@ -47,8 +46,7 @@
 		705EB2E018C42C5500AA841D /* YMNetworkActivityManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YMNetworkActivityManager-Prefix.pch"; sourceTree = "<group>"; };
 		705EB2E118C42C5500AA841D /* YMNetworkActivityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMNetworkActivityManager.h; sourceTree = "<group>"; };
 		705EB2E318C42C5500AA841D /* YMNetworkActivityManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMNetworkActivityManager.m; sourceTree = "<group>"; };
-		705EB2EA18C42C5500AA841D /* YMNetworkActivityManagerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMNetworkActivityManagerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		705EB2EB18C42C5500AA841D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		705EB2EA18C42C5500AA841D /* YMNetworkActivityManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YMNetworkActivityManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		705EB2ED18C42C5500AA841D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		705EB2F518C42C5500AA841D /* YMNetworkActivityManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YMNetworkActivityManagerTests-Info.plist"; sourceTree = "<group>"; };
 		705EB2F718C42C5500AA841D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				705EB2EC18C42C5500AA841D /* SenTestingKit.framework in Frameworks */,
 				705EB2EE18C42C5500AA841D /* UIKit.framework in Frameworks */,
 				705EB2EF18C42C5500AA841D /* Foundation.framework in Frameworks */,
 				705EB2F218C42C5500AA841D /* libYMNetworkActivityManager.a in Frameworks */,
@@ -93,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				705EB2D918C42C5500AA841D /* libYMNetworkActivityManager.a */,
-				705EB2EA18C42C5500AA841D /* YMNetworkActivityManagerTests.octest */,
+				705EB2EA18C42C5500AA841D /* YMNetworkActivityManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				705EB2DC18C42C5500AA841D /* Foundation.framework */,
-				705EB2EB18C42C5500AA841D /* SenTestingKit.framework */,
 				705EB2ED18C42C5500AA841D /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -181,8 +177,8 @@
 			);
 			name = YMNetworkActivityManagerTests;
 			productName = YMNetworkActivityManagerTests;
-			productReference = 705EB2EA18C42C5500AA841D /* YMNetworkActivityManagerTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 705EB2EA18C42C5500AA841D /* YMNetworkActivityManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -190,6 +186,7 @@
 		705EB2D118C42C5500AA841D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Yusuke Miyazaki";
 			};
@@ -360,12 +357,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YMNetworkActivityManager/YMNetworkActivityManager-Prefix.pch";
 				INFOPLIST_FILE = "YMNetworkActivityManagerTests/YMNetworkActivityManagerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -375,12 +372,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YMNetworkActivityManager/YMNetworkActivityManager-Prefix.pch";
 				INFOPLIST_FILE = "YMNetworkActivityManagerTests/YMNetworkActivityManagerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
