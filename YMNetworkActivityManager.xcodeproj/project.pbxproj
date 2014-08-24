@@ -52,7 +52,6 @@
 		705EB2ED18C42C5500AA841D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		705EB2F518C42C5500AA841D /* YMNetworkActivityManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YMNetworkActivityManagerTests-Info.plist"; sourceTree = "<group>"; };
 		705EB2F718C42C5500AA841D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		705EB2F918C42C5500AA841D /* YMNetworkActivityManagerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMNetworkActivityManagerTests.h; sourceTree = "<group>"; };
 		705EB2FA18C42C5500AA841D /* YMNetworkActivityManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMNetworkActivityManagerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,7 +128,6 @@
 		705EB2F318C42C5500AA841D /* YMNetworkActivityManagerTests */ = {
 			isa = PBXGroup;
 			children = (
-				705EB2F918C42C5500AA841D /* YMNetworkActivityManagerTests.h */,
 				705EB2FA18C42C5500AA841D /* YMNetworkActivityManagerTests.m */,
 				705EB2F418C42C5500AA841D /* Supporting Files */,
 			);
