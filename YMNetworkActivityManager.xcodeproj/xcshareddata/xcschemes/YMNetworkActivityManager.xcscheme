@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "705EB2E918C42C5500AA841D"
-               BuildableName = "YMNetworkActivityManagerTests.octest"
+               BuildableName = "YMNetworkActivityManagerTests.xctest"
                BlueprintName = "YMNetworkActivityManagerTests"
                ReferencedContainer = "container:YMNetworkActivityManager.xcodeproj">
             </BuildableReference>
