@@ -19,13 +19,15 @@ task :default => [:build]
 
 task :test do
   DESTINATIONS.each do |destination|
-    sh "xcodebuild -project #{PROJECT_DIR} -sdk iphonesimulator -scheme #{SCHEME} -configuration Debug -destination '#{destination}' test"
+    sh "xctool -project #{PROJECT_DIR} -sdk iphonesimulator -scheme #{SCHEME} -configuration Debug -destination '#{destination}' test"
   end
 end
 
 desc "Build"
 task :build do
-    sh "xcodebuild -project #{PROJECT_DIR} -sdk #{SDK} -scheme #{SCHEME} -configuration #{CONFIGURATION} clean build | xcpretty -c; exit ${PIPESTATUS[0]}"
+  DESTINATIONS.each do |destination|
+    sh "xctool -project #{PROJECT_DIR} -sdk iphonesimulator -scheme #{SCHEME} -configuration Debug -destination '#{destination}' clean build"
+  end
 end
 
 desc "Clean"
