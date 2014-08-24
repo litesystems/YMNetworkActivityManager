@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YMNetworkActivityManager"
-  s.version      = "1.1"
+  s.version      = "1.1.0"
   s.summary      = "Manager class of the network activity indicator."
 
   s.description  = <<-DESC
