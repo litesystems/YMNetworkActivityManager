@@ -7,7 +7,8 @@ YMNetworkActivityManager
 
 Requirements
 ============
-iOS 5+ with ARC (Automatic Reference Counting).
+iOS 6.1+ with ARC (Automatic Reference Counting).  
+[For iOS 5.0-6.0.2 older version is available.](https://github.com/litesystems/YMNetworkActivityManager/tree/1a8a2cefc580b5e29a8d1857ff07b2834a867591)
 
 Installation
 ============
