@@ -1,21 +1,21 @@
 //
-//  ViewController.m
-//  YMNetworkActivityManagerDemo
+//  YMViewController.m
+//  YMNetworkActivityManager
 //
 //  Copyright (c) 2013-2014 Yusuke Miyazaki.
 //
 
-#import "ViewController.h"
+#import <YMNetworkActivityManager/YMNetworkActivityManager.h>
 
-#import "YMNetworkActivityManager.h"
+#import "YMViewController.h"
 
-@interface ViewController () {
+@interface YMViewController () {
     YMNetworkActivityManager *manager;
 }
 
 @end
 
-@implementation ViewController
+@implementation YMViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,17 +24,17 @@
 
 - (IBAction)incrementButtonTouchUpInside:(id)sender {
     [manager increment];
-    NSLog(@"NetworkActivityManager: Increment[%ld]", (long)manager.counter);
+    NSLog(@"YMNetworkActivityManager: Increment[%ld]", (long)manager.counter);
 }
 
 - (IBAction)decrementButtonTouchUpInside:(id)sender {
     [manager decrement];
-    NSLog(@"NetworkActivityManager: Decrement[%ld]", (long)manager.counter);
+    NSLog(@"YMNetworkActivityManager: Decrement[%ld]", (long)manager.counter);
 }
 
 - (IBAction)resetButtonTouchUpInside:(id)sender {
     [manager reset];
-    NSLog(@"NetworkActivityManager: Reset[%ld]", (long)manager.counter);
+    NSLog(@"YMNetworkActivityManager: Reset[%ld]", (long)manager.counter);
 }
 
 @end
