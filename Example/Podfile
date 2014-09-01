@@ -1,0 +1,7 @@
+target 'YMNetworkActivityManager', :exclusive => true do
+  pod "YMNetworkActivityManager", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "YMNetworkActivityManager", :path => "../"
+end

@@ -1,13 +1,13 @@
 //
-//  ViewController.h
-//  YMNetworkActivityManagerDemo
+//  YMViewController.h
+//  YMNetworkActivityManager
 //
 //  Copyright (c) 2013-2014 Yusuke Miyazaki.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface YMViewController : UIViewController
 
 - (IBAction)incrementButtonTouchUpInside:(id)sender;
 - (IBAction)decrementButtonTouchUpInside:(id)sender;
